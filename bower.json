@@ -1,9 +1,8 @@
 {
   "name": "Graphite",
   "version": "0.0.0",
-  "dependencies": {},
-  "devDependencies": {
-    
-  }
+  "dependencies": {
+    "raphael": "~2.1.4"
+  },
+  "devDependencies": {}
 }
-

@@ -19,7 +19,26 @@ module.exports = function(grunt) {
         stripBanners: true
       },
       dist: {
-        src: ['lib/{,*/}*.js'],
+        src: [
+            'bower_components/raphael/raphael.js',
+            'lib/Graphite.js',
+            'lib/core/Class.js',
+            'lib/core/Utils.js',
+            'lib/core/BaseObject.js',
+            'lib/core/EventEmitter.js',
+            'lib/core/Hermes.js',
+            'lib/engines/RapahelEngine.js',
+            'lib/engines/RenderEngine.js',
+            'lib/models/Vertice.js',
+            'lib/models/Link.js',
+            'lib/models/Graph.js',
+            'lib/views/View.js',
+            'lib/views/BaseView.js',
+            'lib/views/CompositeView.js',
+            'lib/views/VerticeView.js',
+            'lib/views/LinkView.js',
+            'lib/views/GraphView.js'
+        ],
         dest: 'dist/<%= pkg.name %>.v<%= pkg.version %>.js'
       }
     },
@@ -58,9 +77,10 @@ module.exports = function(grunt) {
     }
   });
 
-  
+
 
   // Default task.
+  grunt.registerTask('build', ['concat']);
   grunt.registerTask('default', ['mochaTest', 'concat', 'uglify']);
 
   // Specific tasks

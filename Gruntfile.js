@@ -27,7 +27,7 @@ module.exports = function(grunt) {
             'lib/core/BaseObject.js',
             'lib/core/EventEmitter.js',
             'lib/core/Hermes.js',
-            'lib/engines/RapahelEngine.js',
+            'lib/engines/RaphaelEngine.js',
             'lib/engines/RenderEngine.js',
             'lib/models/Vertice.js',
             'lib/models/Link.js',

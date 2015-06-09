@@ -22,6 +22,7 @@ module.exports = function(grunt) {
         src: [
             'bower_components/raphael/raphael.js',
             'lib/Graphite.js',
+            'lib/config/Config.js',
             'lib/core/Class.js',
             'lib/core/Utils.js',
             'lib/core/BaseObject.js',
